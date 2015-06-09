@@ -1,0 +1,8 @@
+1. Installer mathdesign
+2. Installer getnonfreefonts-scriptet: https://www.tug.org/fonts/getnonfreefonts/
+3. Kør “getnonfreefonts-sys -a
+3a. Kør “sudo updmap-sys” hvis den fejler i step 3.
+4. Hvis latex giver en warning omkring forkert size og department/universitetslogoet er kursiv: Find filen “t1mdugm.fd” i mathdesign pakken: (i.e. /usr/local/texlive/2014/texmf-dist/tex/latex/mathdesign/mdugm/t1mdugm.fd)
+Udkommenter de to linjer:
+	<-> mdugmrofc8t
+	<-> mdugmmofc8t
