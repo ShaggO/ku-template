@@ -1,0 +1,15 @@
+% Frederiksberg unit ``natbio-ics'', Department of Computer Science (DIKU), NATBIO faculty
+% Malte Staer Nissen, 2015-06-09
+
+\PassOptionsToPackage{natbio}{beamerthemeKUsetup}
+\PassOptionsToPackage{lrimage=icstitlelrcorner,
+                      style=alternative}{beamerinnerthemeKUtitlepage}
+\PassOptionsToPackage{style=institute}{beamerouterthemeKUhead}
+
+\g@addto@macro\Frederiksberg@AfterPackages{
+  \ifx\KU@language\KU@dk
+    \institute{Datalogisk Institut}
+  \else
+    \institute{Department of Computer Science}
+  \fi
+}
